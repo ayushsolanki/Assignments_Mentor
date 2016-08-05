@@ -1,0 +1,15 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  }
+
+h1{
+    color : red;
+}
+
+body{
+    font-size:16px;
+    font-family: 'Open Sans', sans-serif;
+    //300px and 600px used from google fonts.
+}
