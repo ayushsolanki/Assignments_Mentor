@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+            <title>JavaScript!</title>  
+    </head>  
+    <body>  
+       
+        <p id="intro">My first paragraph...</p>  
+      
+        <ul>  
+            <li>List item 1</li>  
+            <li>List item 1</li>  
+            <li>List item 1</li>  
+            <li>List item 1</li>  
+            <li>List item 1</li>  
+        </ul>  
+      
+        <script type="text/javascript">  
+        // <![CDATA[  
+			var introParagraph = document.getElementById('intro');  
+			alert(introParagraph);
+			
+			// Access single unordered list: [0] index  
+			var unorderedList = document.getElementsByTagName('ul')[0];  
+				  
+			// Create Node list of all list items within the UL:  
+			var allListItems = unorderedList.getElementsByTagName('li');  
+				 
+			// Now, we can loop through each list item using a FOR loop:  
+			for (var i = 0, length = allListItems.length; i < length; i++) {  
+				// Extract text node within and alert its content:  
+				alert( allListItems[i].firstChild.data );  
+			}  
+			
+        // ]]>  
+        </script>  
+      
+    </body>  
+</html>
+

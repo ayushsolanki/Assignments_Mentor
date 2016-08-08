@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Example</title>
+		<!--
+			Author: Mrugesh Panchal
+			Object in javascript
+		-->
+		<script language="javascript" type="text/javascript"> 
+			
+			var Sales = "Toyota";
+
+			function CarTypes(name) {
+				return (name == "Honda") ? name : "Sorry, we don't sell " + name + "." ;
+			}
+
+			var car = { 
+				myCar: "Maruti", 
+				getCar: CarTypes("Honda"), 
+				getSome : function(){return 'hiii';},
+				special: Sales 
+			};
+
+			console.log(car.myCar);   
+			console.log(car.getCar);  
+			console.log(car.special); 
+			console.log(car.getSome()); 
+			
+			console.log('------------------------'); 
+			
+			var car1 = { 
+				manyCars: {
+					a: "Car1", 
+					"b": "Car2"
+				}, 
+				7: "Car3" 
+			};
+
+			console.log(car1.manyCars.b); 
+			console.log(car1[7]);
+			
+			console.log('------------------------'); 
+			
+			var foo = {
+				"a": "alpha", 
+				2: "two"
+			};
+			console.log(foo.a); 
+			console.log(foo[2]);
+			// console.log(foo.2); 
+			// console.log(foo[a]);
+			console.log(foo["a"]); 
+			console.log(foo["2"]); 
+			
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Java Script Example</h1>
+		</div>
+	</body>
+</html>

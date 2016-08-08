@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Example</title>
+		<!--
+			Author: Mrugesh Panchal
+			Constructor example in javascript
+		-->
+		<script language="javascript" type="text/javascript"> 
+			
+			function Car(make, model, year) {
+				this.make = make;
+				this.model = model;
+				this.year = year;
+			}
+			
+			var mycar = new Car("Maruti", "800", 2000);
+			
+			console.log(mycar);
+			
+			mycar.color = "white";
+			// Car.prototype.color = null;
+			
+			console.log(mycar);
+			
+			var kenscar = new Car("Tata", "Indica", 2004);
+			
+			console.log(kenscar);
+			
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Java Script Example</h1>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	   <title>My page</title>
+	</head>
+	<body>
+	  <input type="button" value="Set paragraph background color" onclick="set_background()">
+	  <p>hi</p>
+	  <p>hello</p>
+	  <script>
+		function set_background() {
+		  // get a list of all the body elements (there will only be one),
+		  // and then select the zeroth (or first) such element
+		  myBody = document.getElementsByTagName("body")[0];
+
+		  // now, get all the p elements that are descendants of the body
+		  myBody.getElementsByTagName("p")[0].innerHTML = 'ttttttt';
+
+		  // get the second item of the list of p elements
+		  myP = myBodyElements[1];
+		  myP.style.backgroundColor = "rgb(255,0,0)";*/
+		}
+	  </script>
+	</body>
+</html>
+

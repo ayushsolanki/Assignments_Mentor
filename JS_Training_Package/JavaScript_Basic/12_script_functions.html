@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Example</title>
+		<!--
+			Author: Mrugesh Panchal
+			Functions 
+		-->
+		<script language="javascript" type="text/javascript"> 
+			function square(number) {
+				return number * number;
+			}
+			
+			// passing object to functions
+			function myFunc(theObject) {
+			  theObject.make = "Toyota";
+			  return theObject;
+			}
+			var mycar = {
+				make: "Honda", 
+				model: "Accord", 
+				year: 1998
+			},
+			x = mycar.make;     // x gets the value "Honda"
+			console.log(x);
+			
+			console.log(myFunc(mycar)); // make will be Toyota
+			
+			// The following variables are defined in the global scope
+			var num1 = 20,
+				num2 = 3,
+				name = "Ramesh";
+
+			// This function is defined in the global scope
+			function multiply() {
+			  return num1 * num2;
+			}
+
+			console.log(multiply()); // Returns 60
+			
+			// Nested function
+			// A nested function example
+			function getScore () {
+			  var num1 = 2,
+				  num2 = 3;
+			  
+			  function add() {
+				return name + " scored " + (num1 + num2);
+			  }
+			  
+			  return add();
+			}
+
+			console.log(getScore()); // Returns "Chamahk scored 5"
+			
+			/*
+				predefined function in JS
+				isFinite
+				isNan
+				parseInt parseFloat
+				
+			*/
+						
+				
+			function test(arg1, arg2) {
+				console.log('hello');
+			}
+function test() {
+				console.log('hello1');
+			}			
+			test();
+			
+			// Ex: recursive function
+			
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Java Script Example</h1>
+		</div>
+	</body>
+</html>

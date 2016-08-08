@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	   <title>My page</title>
+	</head>
+	<body>
+		<div>The header</div>
+		<ul><li>A list</li></ul>
+		<div>The footer</div>
+		
+		<script>
+			var body = document.body;
+			
+			// The parentNode property references the parent node. 
+			// It equals null for document.documentElement.
+
+			// Accessing for first child
+			console.log(body.parentNode);
+			
+			console.log(body.firstChild.parentNode);
+			
+			console.log(body.children[0].nextSibling);
+			
+			// Accessing for last child
+			console.log(body.lastChild.parentNode);
+			
+			console.log(body.lastChild.previousSibling);
+			
+			console.log(document.body.lastChild.nextSibling);
+			// The second expression maybe either null or a text node. 
+			// That’s because document.body.children[0] is a first element child, 
+			// it may have a text node as the previousSibling.
+			console.log(document.body.children[0].previousSibling);
+		</script>
+		
+	</body>
+</html>
+

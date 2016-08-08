@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.divclass {
+				height: 300px;
+				width: 300px;
+				background-color: #CCC;
+			}
+			.spanclass {
+				background-color: #00FF00;
+				margin-left: 100px;
+				margin-top: 100px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="divclass">
+			<span class="spanclass">
+				Span Div
+			</span>
+		</div>
+		<script>
+			document.getElementsByTagName('div')[0].addEventListener('click', doSomething2, true);
+			document.getElementsByTagName('span')[0].addEventListener('click', doSomething, false);
+			
+			function doSomething2 () {
+				alert('Do Something 2');
+			}
+			
+			function doSomething () {
+				alert('Do Something');
+			}
+		</script>
+		
+	</body>
+</html>

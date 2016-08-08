@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Example</title>
+		<!--
+			Author: Mrugesh Panchal
+			Inheritance in javascript
+		-->
+		<script language="javascript" type="text/javascript"> 
+			// define the Person Class
+			function Person() {}
+
+			Person.prototype.walk = function(){
+			  alert ('I am walking!');
+			};
+			Person.prototype.sayHello = function(){
+			  alert ('hello');
+			};
+
+			// define the Student class
+			function Student() {
+			  // Call the parent constructor
+			  // Person.call(this);
+			}
+
+			// inherit Person
+			Student.prototype = new Person();
+			Student.prototype.sayHello();
+			Student.prototype.walk();
+			// Student.prototype.sayGoodBye(); wan't work
+			 
+			// replace the sayHello method
+			Student.prototype.sayHello = function(){
+			  alert('hi, I am a student');
+			}
+
+			// add sayGoodBye method
+			Student.prototype.sayGoodBye = function(){
+			  alert('goodBye');
+			}
+
+			var student1 = new Student();
+			student1.sayHello();
+			student1.walk();
+			student1.sayGoodBye();
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Java Script Example</h1>
+		</div>
+	</body>
+</html>

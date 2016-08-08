@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Example</title>
+		<!--
+			Author: Mrugesh Panchal
+			undefined is a property of the global object
+			A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined
+		-->
+		<script language="javascript" type="text/javascript"> 
+			var x = null;
+			if (x == undefined) {
+			   console.log('undefined');
+			}
+			else {
+			   console.log('defined');
+			}
+			
+			console.log('-------------');
+			
+			var y;
+			// Strict equality
+			if (y === undefined) {
+			   console.log('undefined');
+			}
+			else {
+			   console.log('defined');
+			}
+			
+			console.log('-------------');
+			
+			// reason to use typeof() is that it does not throw an error if the variable has not been defined.
+			var var1;
+			if (typeof var1 === 'undefined') {
+			   console.log('welcome');
+			}
+			
+			// x has not been defined before
+			if (typeof var2 === 'undefined') { // evaluates to true without errors
+			   console.log('came in if');
+			}
+
+			/*
+			if(var3 === undefined){ // throws a ReferenceError
+
+			}
+			*/
+			
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Java Script Example</h1>
+		</div>
+	</body>
+</html>

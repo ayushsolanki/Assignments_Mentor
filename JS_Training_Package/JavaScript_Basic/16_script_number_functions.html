@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Example</title>
+		<!--
+			Author: Mrugesh Panchal
+			parseInt(string, radix);
+			parseFloat(string)
+		-->
+		<script language="javascript" type="text/javascript"> 
+			console.log('----------------------');
+		
+			console.log(parseInt("015", 10));
+			console.log(parseInt("     15", 10));
+			console.log(parseInt("15     ", 10));
+			console.log(parseInt(15.99, 10));
+			console.log(parseInt("15*3", 10));
+			console.log(parseInt("10+5", 10));
+			console.log(parseInt("15e2", 10));
+			console.log(parseInt("15px", 10));
+			console.log(parseInt("px15", 10));
+			
+			console.log('----------------------');
+			
+			console.log(parseFloat("3.14"));
+			console.log(parseFloat("314e-2"));
+			console.log(parseFloat("314e+2"));
+			console.log(parseFloat("0.0314"));
+			console.log(parseFloat("3.14hop"));
+			console.log(parseFloat("more3.14"));
+			
+			console.log('----------------------');
+			
+			console.log(isNaN(NaN));
+			console.log(isNaN(undefined));
+			console.log(isNaN({}));      
+
+			console.log('----------------------');
+			
+			console.log(isNaN(true)); // considering as numeric
+			console.log(isNaN(false)); // considering as numeric
+			console.log(isNaN(null)); // considering as numeric
+			console.log(isNaN(37)); // considering as numeric
+	
+			console.log('----------------------');
+	
+			// strings
+			console.log(isNaN("37"));
+			console.log(isNaN("37.37"));
+			console.log(isNaN(""));
+			console.log(isNaN(" "));
+			
+			// This is a false positive and the reason why isNaN is not entirely reliable
+			console.log(isNaN("helloworld"));
+			// true: "helloworld" is converted to a number. 
+			// Parsing this as a number fails and returns NaN
+			
+			console.log('----------------------');
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Java Script Example</h1>
+		</div>
+	</body>
+</html>

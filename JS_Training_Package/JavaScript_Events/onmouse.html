@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script>
+		function down()
+		{
+			console.log("Mouse Down");
+		}
+		function clicked()
+		{
+			console.log("Click");
+		}
+		function up()
+		{
+			console.log("Mouse UP");
+		}
+	</script>
+	</head>
+	<body>
+		<input type="button" value="Click button" onmousedown="down()" onclick="clicked()" onmouseup="up()">
+	</body>
+</html>

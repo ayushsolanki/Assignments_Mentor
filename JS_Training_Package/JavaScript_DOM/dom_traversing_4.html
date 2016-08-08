@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	   <title>My page</title>
+	</head>
+	<body>
+		<div class="test" id="test1">The header</div>
+
+		<ul><li>A list</li></ul>
+
+		<div>The footer</div>
+		
+		<script>
+			var body = document.body;
+
+			console.log(body.parentNode.nodeType);
+			console.log(body.firstChild.nodeType);
+			
+			
+			console.log(body.children[0].nodeName);
+			
+			
+			console.log(body.children[0].attributes[0].nodeValue);
+			console.log(body.children[0].attributes[1].nodeValue);
+			// console.log(body.childNodes[1].attributes[0].nodeValue);
+			
+			// 
+			console.log(body.children[0].innerHTML);
+			console.log(body.childNodes[1].innerHTML);
+			
+			// body.children[0].style.color = 'red';
+		</script>
+		
+	</body>
+</html>
+
