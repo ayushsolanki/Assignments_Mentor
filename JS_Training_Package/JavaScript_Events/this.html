@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<title>This Key word</title>
+	<script>   
+		function doSomething(obj)
+		{
+			var linkTo = obj.href;
+			obj.style.color = '#cc0000';
+			return confirm('Do you really want to follow the link to ' + linkTo + '?');
+		}
+    </script>
+  </head>
+  <body>
+    <h1>This key word example</h1>
+	<a href="#1" onClick="return doSomething(this);">Link 1</a>
+	<a href="#2" onClick="return doSomething(this);">Link 2</a>
+  </body>
+</html>
+

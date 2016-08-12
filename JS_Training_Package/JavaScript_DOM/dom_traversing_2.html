@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	   <title>My page</title>
+	</head>
+	<body>
+		<div>The header</div>
+
+		<ul><li>A list</li></ul>
+
+		<div>The footer</div>
+		
+		<script>
+			var body = document.body;
+			
+			// The firstChild and lastChild properties allow to quickly access first or last child.
+			
+			// Accessing for first child
+			console.log(body.childNodes[0]);
+			console.log(body.firstChild);
+			
+			// Accessing for last child
+			console.log(body.childNodes[body.childNodes.length-1]);
+			console.log(body.lastChild);
+		</script>
+		
+	</body>
+</html>
+

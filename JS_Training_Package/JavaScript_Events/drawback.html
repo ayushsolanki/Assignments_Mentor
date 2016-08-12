@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Traditional Event Handler Drawback</title>
+	</head>
+	<body>
+		<h1>Traditional Event Handler Drawback</h1>
+		<input type="button" id="btn" value="Click Button" />
+		<script type="text/javascript">
+			document.getElementById('btn').onclick = doSomething1;
+			document.getElementById('btn').onclick = doSomething2;
+			function doSomething1() {
+				alert('Do something 1!');
+			}
+			function doSomething2() {
+				alert('Do something 1!');
+			}
+		</script>
+	</body>
+</html>

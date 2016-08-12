@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Example</title>
+		<!--
+			Author: Mrugesh Panchal
+			Class Object in javascript
+		-->
+		<script language="javascript" type="text/javascript"> 
+			// The Property (object attribute)
+			function Person(gender) {
+			  this.gender = gender;
+			  // alert('Person instantiated');
+				/*var sayhello1 = (function() {
+					return 'tet';
+				});*/
+			}
+
+			var person1 = new Person('Male');
+			var person2 = new Person('Female');
+
+			//display the person1 gender
+			// alert('person1 is a ' + person1.gender); 
+			
+			// The methods
+			// Same logic as properties. 
+			// Difference is that 
+			Person.prototype.sayHello = function()
+			{
+			  alert ('hello');
+			};
+			Person.staticMethod = function() {alert('called');}
+			
+			person1.sayHello();
+			Person.sayHello;
+			Person.staticMethod();
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Java Script Example</h1>
+		</div>
+	</body>
+</html>

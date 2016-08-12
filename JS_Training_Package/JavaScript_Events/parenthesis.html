@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Traditional Event Handler</title>
+	</head>
+	<body>
+		<h1>Traditional Event Handler</h1>
+		<input type="button" id="btn" value="Click Button" />
+		<script type="text/javascript">
+			document.getElementById('btn').onclick = doSomething;
+			document.getElementById('btn1').onclick = doSomething;
+			document.getElementById('btn2').onclick = doSomething;
+			
+			function doSomething() {
+				alert('Do something called!');
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Traditional Event Handler</title>
+	</head>
+	<body>
+		<h1>Traditional Event Handler</h1>
+		<input type="button" id="btn" value="Click Button" />
+		<a href="#" id="hlink">Hyper link</a>
+		<script type="text/javascript">
+			document.getElementById('btn').onclick = doSomething;
+			function doSomething(e) {
+			
+				var e = e || window.event;
+				
+				e.stopPropgation();
+				window.event.cancelBubble = true;
+				
+				
+			
+				if (e.keyCode) {
+					code = e.keyCode;
+				}
+				
+				if (e.which) {
+					code = e.which;
+				}
+				console.log(e);
+				console.log(e.pageX);
+				console.log(e.pageY);
+				alert(code);
+			}
+		</script>
+	</body>
+</html>

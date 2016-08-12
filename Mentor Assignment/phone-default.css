@@ -1,0 +1,106 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*-----BODY -----*/
+.head {
+    
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+}
+
+ul {
+   
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    margin-top: 0px;
+    
+
+}
+
+ul li{
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+    padding: 5px;
+    text-align: center;
+    font-size:14px;
+   
+
+}
+
+ul li.active {
+    
+    background-color:rgba(255,255,255,0.7);
+}
+
+.wrapper {
+
+    max-width: 800px;
+    padding: 20px;
+
+    margin: 20px 10%;
+    
+    background-color:lightgoldenrodyellow;
+    
+ 
+}
+button {
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color:#3eacdd;
+    color: #f4f3f1;
+    padding: 5px;
+ 
+}
+.title {
+    font-size: 2em;
+    margin-bottom: 3px;
+    
+}
+
+.column-12 {
+    
+    width:250px;
+    height:250px;
+    margin:20px auto;
+}
+.wrapper p{
+    margin-bottom: 5px;
+}
+.row .logo {
+    
+    height:100px;
+    width: 200px;
+    margin:0 auto;
+    background-color:lightgray;
+}
+
+.row .content {
+    
+  padding-left:40px;
+  padding-top:10px;
+    
+}
+
+.content h3 {
+    
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content p {
+    
+    font-style:justify;
+    padding-bottom: 5px;
+}
+
+
+.row:after {
+    
+    content:"";
+    clear:both;
+    visibility: hidden;
+    display: block;
+    height: 0;
+}

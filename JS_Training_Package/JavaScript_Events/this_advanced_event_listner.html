@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Advanced Event Handler</title>
+	</head>
+	<body>
+		<h1>Advanced Event Handler</h1>
+		<a href="#" id="btn">Hyper link</a>
+		<script type="text/javascript">
+			document.getElementById('btn').addEventListener('click', doSomething1, false);
+			
+			function doSomething1() {
+				this.style.color = '#FF00FF';
+			}
+		</script>
+	</body>
+</html>

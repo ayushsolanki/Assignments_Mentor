@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>preventDefault example</title>
+	</head>
+
+	<body>
+	<p>Please click on the checkbox control.</p>
+	<form>
+		<input type="checkbox" id="my-checkbox" />
+		<label for="my-checkbox">Checkbox</label>
+	</form>
+
+	<script type="text/javascript">
+	function stopDefAction(evt) {
+		evt.preventDefault();
+	}
+		
+	document.getElementById('my-checkbox').addEventListener(
+		'click', stopDefAction, false
+	);
+	</script>
+	
+	</body>
+</html>

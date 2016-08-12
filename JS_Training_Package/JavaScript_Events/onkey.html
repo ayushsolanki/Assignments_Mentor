@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script>
+		function down()
+		{
+			console.log("Key Down");
+		}
+		function press()
+		{
+			console.log("Key Press");
+		}
+		function up()
+		{
+			console.log("Key UP");
+		}
+	</script>
+	</head>
+	<body>
+		<!--
+			In order to understand the difference between keydown and keypress, 
+			it is useful to understand the difference between a "character" and a "key". A "key" is a physical button on 
+			the computer's keyboard while a "character" is a symbol typed by pressing a button.  
+			In theory, the keydown and keyup events represent keys being pressed or released, 
+			while the keypress event represents a character being typed. 
+			The implementation of the theory is not same in all browsers.
+		-->
+		<input type="text" onkeydown="down()" onkeypress="press()" onkeyup="up()">
+	</body>
+</html>

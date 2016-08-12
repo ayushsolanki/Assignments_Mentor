@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Example</title>
+		<!--
+			Author: Mrugesh Panchal
+			Declaring Variable
+			Declare a variable outside of any function, it is called a global variable
+			Declare a variable within a function, it is called a local variable
+		-->
+		<script language="javascript" type="text/javascript"> 
+			// JS doesn't have scope of variable between braces
+			// 'use strict';
+			
+			if (true) {
+				var x = 5;
+			}
+			console.log(x);
+			
+			console.log('================');
+			
+			var myvar = "my value";
+			console.log(myvar);
+			(function() {
+				console.log(myvar);
+				var myvar = "local value";
+				console.log(myvar);
+			})();
+			console.log(myvar);
+			
+			console.log('++++++++++++++++++++');
+			
+			var newvar = "hello hi";
+			console.log(newvar);
+			(function() {
+				console.log(newvar);
+				newvar = "how are you?";
+				console.log(newvar);
+			})();
+			console.log(newvar);
+			
+			console.log('---------------------');
+			
+			num = "num";
+			console.log(num);
+			(function() {
+				console.log(num);
+				num = "new num";
+				console.log(num);
+			})();
+			console.log(num);
+			
+			console.log('***************');
+			
+			value = "value 1";
+			console.log(value);
+			(function() {
+				console.log(value);
+				var value = "value 2";
+				console.log(value);
+			})();
+			console.log(value);
+			
+			
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Java Script Example</h1>
+		</div>
+	</body>
+</html>

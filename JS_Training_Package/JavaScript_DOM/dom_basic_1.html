@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body> 
+		<p id="intro">My first paragraph...</p>  
+		Cats:
+		<input name="x" type="radio" value="Cats">
+		Dogs:
+		<input name="x" type="radio" value="Dogs">
+		<script type="text/javascript">  
+			var textId = document.getElementById("intro").innerHTML;
+			var textTag = document.getElementsByTagName("P")[0].innerHTML;
+			var x=document.getElementsByName("x");
+			
+			alert(textId);
+			alert(textTag);
+			alert(x.length);
+		</script>  
+	</body>
+</html>
+
