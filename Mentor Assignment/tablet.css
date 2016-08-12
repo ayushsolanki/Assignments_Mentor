@@ -1,0 +1,32 @@
+@media only screen and (min-width: 641px) {
+
+   ul li{
+ 
+    padding: 8px;
+    display: inline-block;
+    border-bottom: 0;
+    border-right: 1px solid rgba(255,255,255,0.8);
+
+    }
+    
+    .row {
+        
+        margin:20px 10%;
+    }
+    
+    .column-6 {
+        
+        width:40%;
+        margin:20px 0 20px 0;
+       float:left;
+        
+    }
+    
+    .column-6_1 {
+       
+         width:40%;
+        float:right;
+        
+    }
+
+} /*end of the media query */

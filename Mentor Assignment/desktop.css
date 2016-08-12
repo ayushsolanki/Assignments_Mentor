@@ -1,0 +1,26 @@
+@media (min-width: 900px) {
+
+    ul li{
+ 
+    padding: 8px;
+    display: inline-block;
+   
+    }
+    
+    .column_3 {
+        
+        float:left;
+        width:24%;
+        margin:20px 4px;
+        
+    }
+    
+    .row .logo {
+    
+    width:160px;
+    }
+    
+    
+    
+
+} /*end of the media query */
