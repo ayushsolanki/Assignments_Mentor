@@ -1,0 +1,62 @@
+<!-- page for editing and deleting the respective entries for the author-->
+<div class="container">
+    <form class="form-horizontal displayBookStyling">
+        <h3>Book Details</h3>
+        <!-- Disable the form fields when the page is loaded-->
+        
+        <fieldset ng-disabled="isClicked">
+            
+            <div class="form-group">
+                <label class="col-sm-2 control-label">ISBN</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="empid" ng-model="book.isbn" disabled>
+                </div>
+            </div>
+            
+            
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Title</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="title" ng-model="book.title">
+                </div>
+            </div>
+            
+            
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Author</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="author" ng-model="book.author">
+                </div>
+            </div>
+
+            
+            
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Price</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="price" ng-model="book.price">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Avaliable On</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="Avaliable On" ng-model="book.availableOn">
+                </div>
+            </div>
+
+        </fieldset>
+        
+        <!-- When the edit button is clicked the field gets enabled -->
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button ng-click="view(newItem)" class="btn btn-default">Edit</button>
+                <button type="submit" ng-click="updateBookDetails(book)" class="btn btn-default">Update</button>
+                <button type="button" ng-click="deleteBook(book)" class="btn btn-default">Delete</button>
+            </div>
+        </div>
+
+    </form><!-- End of form -->
+
+</div>

@@ -86,6 +86,15 @@ nav ul li:last-child a {
 #contentWrapper  {
 	background-color: #fff;
 }
+#contentWrapper .row{
+    
+}
+
+#contentWrapper .row:after{
+    content: "";
+  display: table;
+  clear: both;
+}
 #contentWrapper h1 {
 	color:#e22121;
 	font-size: 2em;
@@ -93,8 +102,28 @@ nav ul li:last-child a {
 	text-shadow: 1px 1px 2px #999;
 }
 
+.column-2{
+    width: 50%;
+    float: left; 
+}
+.column-2 img{
+    width: 100%;
+}
+.column-12, .column-6, .column-4, .column-3, .column-2{
+    padding: .5em 2%;
+}
+.color-1, .color-2{
+    padding: 2em 1em 0.5em 1em;
+}
+.color-1{
+    background-color: orange;
 
+}
 
+.color-2{
+    background-color: deepskyblue;
+
+}
 
 
 

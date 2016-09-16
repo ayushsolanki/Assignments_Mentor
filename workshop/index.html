@@ -1,0 +1,70 @@
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!---jquery library----->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- Angularjs library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    
+    <!-- Angularjs routing library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Angularjs resource library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
+
+    <!-- Reset the default browser settings -->
+    <link href="css/reset.css" rel="stylesheet">
+
+    <!---Stylesheet link----->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+     <link rel="stylesheet" href="css/phone.css" />
+
+    <!---JavaScript link----->
+    <script src="js/script.js"></script>
+</head>
+
+    <!-- Bookstore Controller -->
+<body ng-controller="bookStore" class="ngviewcolor">
+
+    <!-- On click of header route to the home page -->
+    <header>
+        <h1><a href="#/" class="headingLine">Online-Bookstore</a></h1>
+    </header>
+
+    <!-- Buttons with the help of bootstrap  -->
+    <div class="container-fluid nav-buttons">
+        <a href="#newBook"><button type = "button" class = "btn btn-primary mainbutton"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add new Book</button></a>
+
+        <a href="#newAuthor"><button type = "button" class = "btn btn-primary mainbutton"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add new Author</button></a>
+
+
+    </div><!--End of div for the buttons -->
+
+    
+    <!-- Display other pages with the help of routing -->
+    <div ng-view></div>
+
+    <!-- jQuery library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Javascript link for author and book update and delete -->
+    <script src="js/author.js"></script>
+    <script src="js/book.js"></script>
+    
+    <!-- Factory method for the http calls -->
+    <script src="js/fhttp.js"></script>
+</body>
+
+</html>

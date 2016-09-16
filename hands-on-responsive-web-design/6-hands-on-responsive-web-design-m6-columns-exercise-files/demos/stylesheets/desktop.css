@@ -3,7 +3,7 @@
 
 
 /*-----INSIDE THE WRAPPERS-----*/
-	header, nav, footer {
+	header, nav,.row, footer {
 		max-width: 1140px;
 		margin: 0 auto; /*centers everything on the page*/
 	}
@@ -29,7 +29,9 @@ nav ul li a {padding: .2em 1.5em;}
 /*-----CONTENT -----*/
 
 
-
+    .column-2{
+        width:16.66%;
+    }
 	
 	
 
