@@ -56,21 +56,20 @@ myapp.controller('bookStore', function($scope, $http, $location, factoryName) {
 	*@ param-{empid,name,emaildid,skills,website,department}*/
     $scope.AddAuthor = function(emp3) {
         var avab = '';
-       // var avab1 = [];
+        var avab1 = [];
        // var skills = [];
         var i = 0;
         var flag = 0;
         
         /* getting the value from the checkboxes */
         $("input:checkbox[name=type]:checked").each(function() {
-            avab += '' + $(this).val() + ',';
-           // avab1.push($(this).val());
+           
+            avab1.push($(this).val());
         });
         
-        avab = avab.replace(/,\s*$/, "");
         
-        emp3['skills'] = avab;
-    //    emp3.skills = avab1;
+       
+        emp3.skills = avab1;
         console.log(emp3);
         
         /* loop for checking if the empid is already present in the database */
@@ -109,14 +108,13 @@ myapp.controller('bookStore', function($scope, $http, $location, factoryName) {
         var avab1 = [];
          /* getting the value from the checkboxes */
         $("input:checkbox[name=type]:checked").each(function() {
-            avab += '' + $(this).val() + ',';
-            
+             avab1.push($(this).val());
         });
-        avab = avab.replace(/,\s*$/, "");
+        
+       
         var i = 0;
         var flag = 0;
-        emp['availableOn'] = avab;
-        
+        emp.availableOn = avab1;
         console.log(emp);
          /* loop for checking if the isbn is already present in the database */
         for (i in $scope.employess) {

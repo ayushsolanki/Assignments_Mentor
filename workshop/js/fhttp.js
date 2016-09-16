@@ -10,9 +10,10 @@ myapp.factory('factoryName', function($http) {
         return $http({
             url: Url,
             method: Method,
-            data: $.param(Data),
+            data: angular.toJson(Data),
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
+                //'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/JSON'
             }
         })
 

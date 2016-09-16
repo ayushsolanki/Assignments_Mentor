@@ -53,6 +53,16 @@ myapp.controller('authorEditController', ['$scope', '$location', '$http', 'facto
 
     /* function for updating the author */
     $scope.updateAuthor = function(emp1) {
+        
+        var avab1 = [];
+        /* Taking values from the check box */
+        $("input:checkbox[name=type]:checked").each(function() {
+           
+            avab1.push($(this).val());
+        });
+        emp1.skills = avab1;
+        console.log(emp1);
+        
         /* confirmation for updating the author */
         var r = confirm("Are you sure you want to update")
         if (r == true) {

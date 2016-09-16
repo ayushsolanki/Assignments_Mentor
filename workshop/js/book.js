@@ -52,6 +52,15 @@ myapp.controller('bookEditController', ['$scope', '$location', '$http', 'factory
 
     /*function for updating the author */
     $scope.updateBookDetails = function(emp1) {
+        
+        var avab1 = [];
+        /* Taking values from the check box */
+        $("input:checkbox[name=type]:checked").each(function() {
+           
+            avab1.push($(this).val());
+        });
+        emp1.availableOn = avab1;
+        
         /*confirmation for updating the book */
         var r = confirm("Are you sure you want to update")
         if (r == true) {
