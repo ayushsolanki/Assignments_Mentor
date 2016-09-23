@@ -1,0 +1,12 @@
+1)	Controller as syntax verses scope
+2)	Manual bootstarp
+3)	Custom directive
+4)	Scopes in directives  : Isolated scope, Inherited ,new 
+5)	 Scope = true in a directive.
+6)	Transclude option in a directive
+7)	One way binding {{::}} 
+8)	Ng-switch
+9)	Link function and its attributes 
+10)	Pre link 
+11)	Compile: {   prelink : compile dom and assign meaning of each directive
+12)	 Post : associate scope with compiled DOM }
