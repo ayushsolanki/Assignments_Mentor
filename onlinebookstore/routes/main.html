@@ -1,0 +1,35 @@
+<div class="container">
+    <!-- Text field for searching the bookname or author or isbn-->
+    <form class="form-inline">
+        <div class="form-group">
+            <div class="input-group">
+               <!-- Binding test for the filater-->
+                <input type="text" class="form-control" ng-model="test" id="exampleInputAmount" placeholder="Search" />
+            </div>
+        </div>
+    </form>
+    
+    <!-- responsive table for displaying the book details-->
+    <div class="table-responsive table-div">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Title</th>
+                    <!-- On click arrange the data is ascending and descinding order-->
+                    <th ng-click="sortField='author'">Author</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Filter for the searchbox -->
+                <tr ng-repeat="employe in employess|orderBy:sortField|filter:test">
+                    <!-- On click go to the respective pages and pass the isbn and name in the url respectively -->
+                    <td><a ng-href="#detailBook?isbn={{employe.isbn}}">{{employe.isbn}}</a></td>
+                    <td>{{employe.title}}</td>
+                    <td><a ng-href="#editAuthor?name={{employe.author}}">{{employe.author}}</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

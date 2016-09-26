@@ -1,0 +1,89 @@
+<!-- Form for the add new book -->
+<div class="container">
+    <form class="form-horizontal bookform" name="AddBook" novalidate>
+
+        <div class="form-group">
+            <label for="isbn" class="col-sm-2 control-label required">ISBN Number
+            </label>
+            <div class="col-sm-10">
+                 <!-- Validation for the compulsory fields in the form -->
+                <input type="text" class="form-control" id="isbn" name="isbn" ng-model="emp.isbn" placeholder="Isbn Number" ng-class="{red: AddBook.isbn.$invalid && AddBook.isbn.$dirty}" required>
+                 <!-- If hte fields are not present the display the message in red -->
+                <span style="color:red" ng-show="AddBook.isbn.$dirty && AddBook.isbn.$invalid">
+					<span ng-show="AddBook.isbn.$error.required">ISBN is required.</span>
+                </span>
+            </div> <!-- End of class col-sm-10 -->
+        </div><!-- End of div for class form-group -->
+
+        
+        <div class="form-group">
+            <label for="title" class="col-sm-2 control-label required">Title
+            </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="title" name="title" ng-model="emp.title" placeholder="Title" ng-class="{red: AddBook.title.$invalid && AddBook.title.$dirty}" required>
+                <span style="color:red" ng-show="AddBook.title.$dirty && AddBook.title.$invalid">
+					<span ng-show="AddBook.title.$error.required">Title is required.</span>
+                </span>
+            </div><!-- End of class col-sm-10 -->
+        </div><!-- End of div for class form-group -->
+
+        
+        <div class="form-group">
+            <label for="author" class="col-sm-2 control-label required">Author
+            </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="author" name="author" ng-model="emp.author" placeholder="Author" ng-class="{red: AddBook.author.$invalid && AddBook.author.$dirty}" required>
+                <span style="color:red" ng-show="AddBook.author.$dirty && AddBook.author.$invalid">
+					<span ng-show="AddBook.author.$error.required">Author is required.</span>
+                </span>
+            </div><!-- End of class col-sm-10 -->
+        </div><!-- End of div for class form-group -->
+
+        
+        <div class="form-group">
+            <label for="price" class="col-sm-2 control-label required">Price
+            </label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="price" name="price" ng-model="emp.price" placeholder="Price" ng-class="{red: AddBook.price.$invalid && AddBook.price.$dirty}" required>
+                  <span style="color:red" ng-show="AddBook.price.$dirty && AddBook.price.$invalid">
+						<span ng-show="AddBook.price.$error.required">Price should be in numbers</span>
+                </span>
+            </div><!-- End of class col-sm-10 -->
+        </div><!-- End of div for class form-group -->
+
+        <!-- Check boxes for the avaliable on-->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Avaliable On</label>
+            <div class="col-sm-10">
+                <div class="checkbox">
+                    <label class="label1">
+                          <input type="checkbox" name="type" value="amazon" /> Amazon 
+                    </label>
+                    <label class="label1">
+                         <input type="checkbox" name="type" value="flipkart" /> Flipkart 
+                    </label>
+                    <label class="label1">
+                         <input type="checkbox" name="type" value="ebay" /> Ebay 
+                    </label>
+                    <label class="label1">
+                         <input type="checkbox" name="type" value="google" /> Google 
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                  <!-- If any of the field is invalid then the submit button is disabled with the $invalid of angularjs-->
+                <button type="submit" ng-click="AddEmp(emp)" class="btn btn-default" ng-disabled="AddBook.isbn.$dirty && AddBook.isbn.$invalid ||
+				 AddBook.title.$dirty && AddBook.title.$invalid ||
+				 AddBook.author.$dirty && AddBook.author.$invalid ||
+				 AddBook.price.$dirty && AddBook.price.$invalid|| 
+				 AddBook.$invalid">Submit</button> 
+                <button type="reset" class="btn btn-default">Reset</button>
+            </div>
+        </div>
+    </form>
+
+</div>
